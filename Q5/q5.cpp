@@ -30,6 +30,8 @@ int main(int argc, char** argv)
     Rectangle rect1(Point(5, 5), Size(10, 10));
     Circle circle2(Point(8, 8), 4);
 
+    std::cout<<circle1.area()<<std::endl;
+
     std::vector<Shape*> shapes{&circle1, & rect1, & circle2};
     for (const Shape* shape : shapes) {
         std::cout << "Shape: " << shape->name() << " center: " << shape->center() << " area: " << shape->area() << std::endl;
