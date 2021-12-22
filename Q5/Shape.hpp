@@ -13,9 +13,8 @@ class Shape {
         Shape()= default;
         Shape(const Point& center, const Size& size) :shape_point(center),size_(size){}
         Shape(const Point& center, const double radius) :shape_point(center),radius_(radius){}
-
+        virtual double area() const = 0; //pure virtual- every shape and its area. change area function from size_t to double
         virtual Point center() const {return shape_point;} // this function is not going to be overridden
-        virtual size_t area() const = 0; // every shape and its area
         virtual string name() const {return "Shape";} // every shape and its name
 };
 ostream& operator<< (ostream& os, const Point& p) {return (os << p.x << '/'<< p.y);} // operator for print Point

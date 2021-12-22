@@ -89,7 +89,8 @@ int main(int argc, char** argv)
     std::cout << "Calling dispatcher thread" << std::endl;
     std::thread t(&dispacher_thread);
     t.join();
-    std::cout << "Press enter to exit" << std::endl;
+//    std::cout << "Press enter to exit" << std::endl;
+    std::cout << "Press enter to exit after when you see the operations are finished" << std::endl;
     getchar();
     // here's the checking of leaking memory. when operations are finish just press enter and see that there are no memory lacks.
     PrintMemoryUsage();

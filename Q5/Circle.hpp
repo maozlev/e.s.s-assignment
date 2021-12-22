@@ -8,7 +8,7 @@ public:
 
 	Circle(const Point& center, const double radius) :Shape(center, radius){}
 
-	size_t area() const override{return M_PI * radius_* radius_;}
+	double area() const override{return M_PI * radius_* radius_;}
 
 	string name() const override {return c_name;}
 };
