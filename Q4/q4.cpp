@@ -45,6 +45,7 @@ int main(int argc, char** argv) {
                     file.close();
                 } else {
                     std::cout << "Error in open dir files" << std::endl;
+                    exit(1);
                 }
             }
         } else if (command_type == "read" && argc == 3) { // example: read test1
@@ -57,6 +58,7 @@ int main(int argc, char** argv) {
                 file.close();
             } else {
                 std::cout << "Error in open file (read)" << std::endl;
+                exit(1);
             }
         }
         else {
