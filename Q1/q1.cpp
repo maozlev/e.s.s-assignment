@@ -34,7 +34,7 @@ std::vector<uint64_t> fill_vector(size_t elementCount) {
 //        vec.push_back(i);
 //    }
 
-    /// method 2: Average iteration duration in microseconds: 77200
+    /// method 2: Average iteration duration in microseconds: 72676
     std::vector<uint64_t> vec(elementCount);
     for (size_t i = 0; i < elementCount; i++) {
         vec[i]=i;
@@ -92,3 +92,8 @@ int main(int argc, char** argv)
     getchar();
     return 0;
 }
+
+/// output:
+//  Average iteration duration in microseconds: 72676
+//  Total elements in vecOfVec: 100000000
+//  Total elements in merged mergedVec: 100000000
