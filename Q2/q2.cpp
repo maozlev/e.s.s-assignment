@@ -60,7 +60,7 @@ int main(int argc, char** argv)
 	std::cout << "Total execution duration in milliseconds: " << std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count() << std::endl;
 	std::cout << "Result:  " << sum <<  ", " <<(sum == EXPECTED_SUM ? "success" : "failure!")<< std::endl;
 	std::cout << "Press enter to exit" << std::endl;
-//	getchar();
+	getchar();
 	return 0;
 }
 
@@ -68,3 +68,21 @@ int main(int argc, char** argv)
 // 1) make Operation1 and 2 to threads called: op1 op2
 // 2) change the syntax to threads syntax. mean: from-"operation1(OP1_PARAM)" to  std::thread op1(operation1,OP1_PARAM);
 // 3) add a mutex to get into CS (critical section) where the sum is increasing
+
+/// output before:
+//Performing operation1
+//Operation1 Performed
+//Performing operation2
+//Operation2 Performed
+//Total execution duration in milliseconds: 15015
+//Result:  1000001000000, success
+//Press enter to exit
+
+/// output after:
+//Performing operation2
+//Performing operation1
+//Operation1 Performed
+//Operation2 Performed
+//Total execution duration in milliseconds: 10084
+//Result:  1000001000000, success
+//Press enter to exit
