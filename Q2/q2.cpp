@@ -49,8 +49,8 @@ int main(int argc, char** argv)
 {
 	auto start = std::chrono::steady_clock::now();
 
-    std::thread op1(operation1,OP1_PARAM);
-    std::thread op2(operation2,OP2_PARAM);
+    std::thread op1(&operation1,OP1_PARAM);
+    std::thread op2(&operation2,OP2_PARAM);
 
     op1.join();
     op2.join();
