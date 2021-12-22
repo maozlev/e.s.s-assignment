@@ -56,6 +56,13 @@ build CMakeFiles/task_5.dir/q5.cpp.obj: CXX_COMPILER__task_5_Debug C$:/Users/972
   OBJECT_DIR = CMakeFiles\task_5.dir
   OBJECT_FILE_DIR = CMakeFiles\task_5.dir
 
+build CMakeFiles/task_5.dir/C_/Users/97252/Desktop/cpp/home-assigment-cpp/Q1/q1.cpp.obj: CXX_COMPILER__task_5_Debug C$:/Users/97252/Desktop/cpp/home-assigment-cpp/Q1/q1.cpp || cmake_object_order_depends_target_task_5
+  DEP_FILE = CMakeFiles\task_5.dir\C_\Users\97252\Desktop\cpp\home-assigment-cpp\Q1\q1.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/97252/Desktop/cpp/home-assigment-cpp/Q5/.
+  OBJECT_DIR = CMakeFiles\task_5.dir
+  OBJECT_FILE_DIR = CMakeFiles\task_5.dir\C_\Users\97252\Desktop\cpp\home-assigment-cpp\Q1
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target task_5
@@ -64,7 +71,7 @@ build CMakeFiles/task_5.dir/q5.cpp.obj: CXX_COMPILER__task_5_Debug C$:/Users/972
 #############################################
 # Link the executable task_5.exe
 
-build task_5.exe: CXX_EXECUTABLE_LINKER__task_5_Debug CMakeFiles/task_5.dir/q5.cpp.obj
+build task_5.exe: CXX_EXECUTABLE_LINKER__task_5_Debug CMakeFiles/task_5.dir/q5.cpp.obj CMakeFiles/task_5.dir/C_/Users/97252/Desktop/cpp/home-assigment-cpp/Q1/q1.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\task_5.dir
