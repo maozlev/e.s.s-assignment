@@ -11,4 +11,4 @@ add_executable(task_5
         q5.cpp
         Rectangle.hpp
         Shape.hpp
-        Size.hpp ../Q5/q5.cpp)
+        Size.hpp ../Q5/q5.cpp ../Q4/q4.cpp)

@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: task_5
+# Project: task_4
 # Configurations: Debug
 # =============================================================================
 
@@ -39,54 +39,47 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/97252/Desktop/cpp/home-assigment-cpp/Q5/cmake-build-debug/
+cmake_ninja_workdir = C$:/cpp/home-assigment-cpp/Q4/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target task_5
+# Object build statements for EXECUTABLE target task_4
 
 
 #############################################
-# Order-only phony target for task_5
+# Order-only phony target for task_4
 
-build cmake_object_order_depends_target_task_5: phony || CMakeFiles/task_5.dir
+build cmake_object_order_depends_target_task_4: phony || CMakeFiles/task_4.dir
 
-build CMakeFiles/task_5.dir/q5.cpp.obj: CXX_COMPILER__task_5_Debug C$:/Users/97252/Desktop/cpp/home-assigment-cpp/Q5/q5.cpp || cmake_object_order_depends_target_task_5
-  DEP_FILE = CMakeFiles\task_5.dir\q5.cpp.obj.d
+build CMakeFiles/task_4.dir/q4.cpp.obj: CXX_COMPILER__task_4_Debug C$:/cpp/home-assigment-cpp/Q4/q4.cpp || cmake_object_order_depends_target_task_4
+  DEP_FILE = CMakeFiles\task_4.dir\q4.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/Users/97252/Desktop/cpp/home-assigment-cpp/Q5/.
-  OBJECT_DIR = CMakeFiles\task_5.dir
-  OBJECT_FILE_DIR = CMakeFiles\task_5.dir
-
-build CMakeFiles/task_5.dir/C_/Users/97252/Desktop/cpp/home-assigment-cpp/Q4/q4.cpp.obj: CXX_COMPILER__task_5_Debug C$:/Users/97252/Desktop/cpp/home-assigment-cpp/Q4/q4.cpp || cmake_object_order_depends_target_task_5
-  DEP_FILE = CMakeFiles\task_5.dir\C_\Users\97252\Desktop\cpp\home-assigment-cpp\Q4\q4.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/Users/97252/Desktop/cpp/home-assigment-cpp/Q5/.
-  OBJECT_DIR = CMakeFiles\task_5.dir
-  OBJECT_FILE_DIR = CMakeFiles\task_5.dir\C_\Users\97252\Desktop\cpp\home-assigment-cpp\Q4
+  INCLUDES = -IC:/cpp/home-assigment-cpp/Q4/.
+  OBJECT_DIR = CMakeFiles\task_4.dir
+  OBJECT_FILE_DIR = CMakeFiles\task_4.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target task_5
+# Link build statements for EXECUTABLE target task_4
 
 
 #############################################
-# Link the executable task_5.exe
+# Link the executable task_4.exe
 
-build task_5.exe: CXX_EXECUTABLE_LINKER__task_5_Debug CMakeFiles/task_5.dir/q5.cpp.obj CMakeFiles/task_5.dir/C_/Users/97252/Desktop/cpp/home-assigment-cpp/Q4/q4.cpp.obj
+build task_4.exe: CXX_EXECUTABLE_LINKER__task_4_Debug CMakeFiles/task_4.dir/q4.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\task_5.dir
+  OBJECT_DIR = CMakeFiles\task_4.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = task_5.exe
-  TARGET_IMPLIB = libtask_5.dll.a
-  TARGET_PDB = task_5.exe.dbg
+  TARGET_FILE = task_4.exe
+  TARGET_IMPLIB = libtask_4.dll.a
+  TARGET_PDB = task_4.exe.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\97252\Desktop\cpp\home-assigment-cpp\Q5\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\cpp\home-assigment-cpp\Q4\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -97,7 +90,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\97252\Desktop\cpp\home-assigment-cpp\Q5\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\97252\Desktop\cpp\home-assigment-cpp\Q5 -BC:\Users\97252\Desktop\cpp\home-assigment-cpp\Q5\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\cpp\home-assigment-cpp\Q4\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\cpp\home-assigment-cpp\Q4 -BC:\cpp\home-assigment-cpp\Q4\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -107,7 +100,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build task_5: phony task_5.exe
+build task_4: phony task_4.exe
 
 # =============================================================================
 # Folder targets.
@@ -115,9 +108,9 @@ build task_5: phony task_5.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/97252/Desktop/cpp/home-assigment-cpp/Q5/cmake-build-debug
+# Folder: C:/cpp/home-assigment-cpp/Q4/cmake-build-debug
 
-build all: phony task_5.exe
+build all: phony task_4.exe
 
 # =============================================================================
 # Built-in targets
